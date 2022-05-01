@@ -1,0 +1,24 @@
+{
+  "name": "homeworksv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FarcasanuMelisa06/HomeWorkSV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FarcasanuMelisa06/HomeWorkSV/issues"
+  },
+  "homepage": "https://github.com/FarcasanuMelisa06/HomeWorkSV#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
