@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  padding: 10px;
+}
+
+.example {
+  border: 1px solid;
+  padding: 20px;
+  text-align: center;
+}
+.handle{
+  position: absolute;
+  top: 60%;
+  left: 145%;
+  transform: translate(-40%, -40%);
+  height: 60px;
+  width: 20px;
+  box-shadow: 10px -10px 0 5px red  ;
+  border-radius: -5%;
+  border-radius: 0px 20px 20px 20px;
+}
+
+.bottle-container {
+  width: 100px;
+  position: relative;
+  padding-top: 1px;
+  height: 165px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.bottle-neck {
+  border: 1px solid red;
+  background: red;
+  width: 60px;
+  height: 15px;
+  margin: auto;
+  position: absolute;
+  left: 40px;
+  top: 1px;
+}
+
+.bottle {
+  border: 1px solid red;
+  width: 140px;
+  height: 150px;
+  border-radius: 40px 40px 20px 20px;
+  margin-top: 15px;
+  background: rgb(251, 247, 247);
+}
+
+.liquid {
+  width: 140px;
+  height: 120px;
+  position: absolute;
+  bottom: -1px;
+  left: 1px;
+  opacity: 0.6;
+  border-radius: 0px 0px 19px 19px;
+}
+.etiquette {
+  width: 100px;
+  height: 30px;
+  border: 2px solid white;
+  background: red;
+  position:absolute;
+  border-radius: 20px 20px 20px 20px;
+  bottom: 40px;
+  left: 20px;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+.etiquettePrice{
+  width: 55px;
+  height: 20px;
+  border: 2px solid white;
+  background: white;
+  position:relative;
+  bottom: 40px;
+  left: 70px;
+  text-align: center;
+  font-size: 30px;
+  font-family: Brush Script MT;
+  cursor: pointer;
+}
+.etiquetteCategory{
+  width: 60px;
+  height: 30px;
+  border: 2px solid white;
+  background:white;
+  position:relative;
+  bottom: 140px;
+  left: 25px;
+  text-align: center;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.name{
+  font-size: 30px;
+    font-weight: 1000;
+    cursor:pointer;
+}
+
+ 
+.ItsMyName{
+ top: 0;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ right: 0;
+  border: 0px solid;
+  cursor: pointer;
+}
+.Color{
+  color: purple;
+}
+
+.Wait {
+  color: purple;
+  font-size: 40px;
+    font-weight: 100;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Load{
+  color: purple;
+  font-size: 40px;
+    font-weight: 100;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+.name.close > .Color{
+  opacity: 0;
+ 
+}
+.name.open > .ItsMyName {
+  color: red;
+}
+
