@@ -1,25 +1,23 @@
 import { useState } from "react";
 
 const AddButton = (props) => {
-  const [etiquette, setEtiquette] = useState("");
-  const [liquidColor, setLiquidColor] = useState("#000000");
+  const [color, setColor] = useState("#ffffff");
 
   const handleClick = () => {
-    props.handleClick({ liquidColor, etiquette });
-  };
-
-  const updateEtiquette = (event) => {
-    setEtiquette(event.target.value);
+    props.handleClick({ color })
   };
 
   return (
     <>
-      <input type="text" value={etiquette} onChange={updateEtiquette}></input>
-      <input
-        type="color" 
-        onChange={(e) => setLiquidColor(e.target.value)}
-      ></input>
-      <button onClick={handleClick}>Add</button>
+      <div className="containerAddButton">
+        <input
+          type="color"
+          value={color}
+          onChange={(e) => setColor(e.target.value)}
+        ></input>
+        <button className="Button" onClick={handleClick}>
+          Add</button>
+      </div>
     </>
   );
 };

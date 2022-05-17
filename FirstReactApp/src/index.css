@@ -132,8 +132,80 @@
     font-weight: 100;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.containerGradient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gradient-box {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  border: 1px solid;
+}
+.containerAddButton{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.Button{
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  border-radius: 10px;
+  border: 2px solid #7b1414;
+  display: inline-block;
+  cursor: pointer;
+  color: #9e0404;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+  padding: 5px 20px;
+  text-decoration: none;
+  margin-left: 3px;
+}
+.Button:hover {
+  background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+  background-color: #dfdfdf;
+}
 
-.d-flex {
+.Button:active {
+  position: relative;
+  top: 1px;
+}
+.BoxColor {
+  width: 100px;
+  height: 40px;
+  border-radius: -10px;
+  margin: 20px;
+  color: white;
+  position: relative;
+  border: 10px solid;
+  line-height: 35px;
+}
+.DeleteButton{
+  position: absolute;
+  top: -10px;
+  right: 88px;
+  padding: 5px;
+  border-radius: 60px;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  background: purple;
+  font-size: 10px;
+  color: white;
+  cursor: default;
+  line-height: 10px;
+}
+
+.CodeColors-container{
+  border: 1px solid;
+  padding: 20px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+.d-flex{
   display: flex;
 }
 .name.close > .Color{
