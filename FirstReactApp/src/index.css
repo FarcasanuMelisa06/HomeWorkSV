@@ -140,7 +140,7 @@
 .gradient-box {
   width: 100px;
   height: 100px;
-  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  background: linear-gradient(to right);
   border: 1px solid;
 }
 .containerAddButton{
