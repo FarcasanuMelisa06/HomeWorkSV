@@ -1,27 +1,25 @@
-// import { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
-// const Notification = ({name, socket}) => {
+const Notification = ({ socket }) => {
+   const [message, setMessage] = useState();
+    useEffect(()=> {
+       socket.on("notification", (notification) =>{
+        setMessage(notification);
+        
+        setTimeout(()=>{
+            setMessage();
+        }, 5000);
+       }); 
+    },[]);
 
-//     const [loaded, setLoaded] = useState(false);
-//     const state = true;
+   if(!message) return null;
 
-//     useEffect(() => {
-//         setTimeout(() => {
-//             setLoaded(true);
-//         }, 5000);
-//     }, []);
 
-//     if(!loaded) return (
+ return (
+     
+     <div className="notification">{message}</div>
+ )
+ 
+};
 
-//         <div className="chat-box" style={{width: 500, height: 20}}>
-//             <p>{name} a trimis un mesaj.</p>
-//             {
-//          socket.emit("hide-notification", state)
-//       }
-//       </div>
-//     );
-
-//     return;
-// };
-
-// export default Notification;
+export default Notification;

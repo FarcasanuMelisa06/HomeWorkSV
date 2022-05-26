@@ -23,7 +23,8 @@ io.on("connection", (socket) => {
   socket.emit("connected");
 
 socket.on("send-info", (name, message) =>{
-  io.emit("received-info", name, message);
+  io.emit("notification", `${name} sent a message`);
+  io.emit("received-info", name, message );
 
   });
 });

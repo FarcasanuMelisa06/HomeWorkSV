@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Message from "./message";
 import MessageForm from "./messageForm";
-//import Notification from "./notification";
+import Notification from "./notification";
 
 const ChatBox = ({ socket }) => {
     const [messages, setMessages] = useState([]);
@@ -14,23 +14,18 @@ const ChatBox = ({ socket }) => {
     };
 
     useEffect(() => {
-
+      
         socket.on("received-info", (nam, mess) => {
             setName(nam);
             addMessage(nam + " : " + mess);
-
-           // socket.emit("show-notification", state);
-
         });
-
     }, []);
 
     return (
         <>
             <Message messages={messages} />
-            <MessageForm socket={socket} />
-            
-         
+            <MessageForm socket={socket} /> 
+            <Notification socket={socket}/>      
         </>
     );
 };

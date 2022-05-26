@@ -15,12 +15,12 @@
   border: 4px solid;
   width: 500px;
   height: 500px;
-  background-color: aquamarine;
+  background-color:lightgoldenrodyellow;
 }
 
 .chat-box p{
   font-size: 20px;
-  color: blue;
+  color: rgb(54, 54, 141);
   padding: 10px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -55,4 +55,19 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: none;
   text-shadow: 1px 1px 0px #ffffff;
   margin-left: 3px;
+}
+
+.notification {
+  margin:30px;
+  padding: 10px;
+  margin-left: 100px;
+  background-color: rgb(218, 218, 230);
+  text-align: center;
+  font-size: 20px;
+color: blueviolet;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 200px;
+  height:20px;
+  border-radius: 10px;
+  border: 10px solid #dcdcdc;
 }
