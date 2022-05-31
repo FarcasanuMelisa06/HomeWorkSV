@@ -20,11 +20,11 @@ function App() {
 
     socket.on("received-answer", (answer) => {
       if (answer === "yes")
-       {socket.emit("update-graph", yes + 20, no - 10, maybe - 10); yes = yes + 20; no = no - 10; maybe = maybe - 10;}
+       {socket.emit("update-graph", yes + 60, no - 30, maybe - 30); yes = yes + 60; no = no - 30; maybe = maybe - 30;}
       if (answer === "no") 
-      {socket.emit("update-graph", yes - 10, no + 20, maybe - 10); yes = yes - 10; no = no + 20; maybe = maybe - 10; }
+      {socket.emit("update-graph", yes - 30, no + 60, maybe - 30); yes = yes - 30; no = no + 60; maybe = maybe - 30; }
       if (answer === "maybe")
-       {socket.emit("update-graph", yes - 10, no - 10, maybe + 20); yes = yes - 10; no = no - 10; maybe = maybe + 20; }
+       {socket.emit("update-graph", yes - 30, no - 30, maybe + 60); yes = yes - 30; no = no - 30; maybe = maybe + 60; }
     });
   }, []);
 
