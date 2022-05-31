@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  padding: 10px;
+}
+.Button{
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  border-radius: 10px;
+  border: 2px solid #14257b;
+  display: inline-block;
+  cursor: pointer;
+  color: #14257b;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+  padding: 5px 20px;
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.Answer{
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.squareYes{
+  background-color:blue;
+  border: 1px solid;
+  margin-top: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 1px;
+  height: 1px;
+}
+
+.squareNo{
+  background-color:rgba(59, 130, 223, 0.891);
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+  width: 1px;
+  height: 1px;
+}
+
+.squareMaybe{
+  background-color: rgb(177, 195, 246);
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+  width: 1px;
+  height: 1px;
+}
+
+.question-box{
+ padding: 50px;
+ text-align: center;
+ font-size: 20px;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.legend-box{
+  padding: 5px;
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+.graph-box{
+  border: 1px solid;
+  text-align: center;
+  width: 1398px;
+  height: 100px;
+  display: flex;
+}
+
+.yes-box{
+  background-color: blue;
+  border: 1px solid;
+  height: 100px;
+
+}
+
+.no-box{
+  background-color: rgba(59, 130, 223, 0.891);
+  border: 1px solid;
+  height: 100px;
+
+}
+
+.maybe-box {
+  background-color: rgb(177, 195, 246);
+  border: 1px solid;
+  height: 100px;
+}
+
